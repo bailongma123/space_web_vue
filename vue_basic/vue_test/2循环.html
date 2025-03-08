@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1 v-if="seen">{{message}}</h1>
+        <ol>
+            <li v-for="i in List">{{i.text}}</li>
+        </ol>
+    </div>
+    
+    <script src="2循环.js"></script>
+</body>
+</html>

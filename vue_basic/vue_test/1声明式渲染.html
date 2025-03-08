@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+        
+        <ol>
+            <li v-for="item in List" v-bind:text="item"></li>
+        </ol>
+    </div>
+    <div id="app-2">
+        <!-- 鼠标悬浮 -->
+        <p v-bind:title="message">
+            鼠标悬停几秒钟查看此处动态绑定的提示信息！
+        </p>
+    </div>
+
+    <script src="1声明式渲染.js"></script>
+</body>
+</html>
