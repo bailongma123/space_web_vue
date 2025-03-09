@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <!-- 父组件可以通过 :todo1="item" 的方式将数据传递给子组件。 -->
+            <toso-item v-for="item in greceryList" v-bind:todo1="item"></toso-item>
+        </ol>
+    </div>
+    <script src="5组件.js"></script>
+</body>
+</html>
