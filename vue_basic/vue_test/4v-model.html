@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{message}}</p>
+        <input type="text" v-model="message" :title="message">
+        <!-- 默认情况下，v-model 会在每次 input 事件触发时同步数据。使用 .lazy 修饰符后，数据同步会改为在 change 事件（如输入框失去焦点）时触发。 -->
+        <input type="text" v-model.lazy="message">
+        <!-- 将输入值自动转为数字类型 -->
+        <input type="text" v-model.number="message" type="numbers">
+        <!-- 自动去除输入值的前后空白字符。 -->
+        <input type="text" v-model.trim="message">
+    </div>
+    <script src="4v-model.js"></script>
+</body>
+</html>
